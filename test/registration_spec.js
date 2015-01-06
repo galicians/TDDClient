@@ -1,12 +1,20 @@
-var Registration = require('../lib/registration')
+var Registration = require('../lib/registration');
+var db = require("secondthought");
 
 describe("Registration", function() {
+    var reg = {};
 
+    before(function(done) {
+        db.connect({db : "membership"}, function(err, db){
+            reg = new Registration(db);
+            done();
+        });
+    })
     describe("a valid application", function() {
         var regResult = {};
 
-        beforeEach(function() {
-            regResult = Registration.applyForMembership({email : "galicians@gmail.com"})
+        before(function() {
+            regResult = reg.applyForMembership({ email : "galicians@gmail.com" })
         });
 
         it("is successful", function() {
@@ -37,4 +45,4 @@ describe("Registration", function() {
         it("is not successful");
         it("tells user that email already exists");
     });
-})
+});
