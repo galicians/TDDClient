@@ -1,6 +1,7 @@
 var Registration = require('../lib/registration');
 var db = require("secondthought");
 
+
 describe("Registration", function() {
     var reg = {};
 
@@ -13,14 +14,21 @@ describe("Registration", function() {
     describe("a valid application", function() {
         var regResult = {};
 
-        before(function() {
-            regResult = reg.applyForMembership({ email : "galicians@gmail.com" })
+        before(function(done) {
+            regResult = reg.applyForMembership({ 
+                email : "galicians@gmail.com",
+                password : "password",
+                confirm : "password" }, function(err, result){
+                    regResult = result;
+            done();
+            });
         });
-
         it("is successful", function() {
             regResult.success.should.equal(true);
         });
-        it("creates a user");
+        it("creates a user", function() {
+            regResult.user.should.be.defined;
+        });
         it("creates a log entry");
         it("sets the user's status to approved");
         it("offers a welcome message");
