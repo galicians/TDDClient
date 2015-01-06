@@ -3,7 +3,7 @@ var User = require('../models/user');
 
 describe("User", function() {
 
-    describe("defaults", function(){
+    describe("by default", function(){
         var user = {};
 
         before(function() {
