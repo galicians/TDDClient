@@ -1,0 +1,14 @@
+2015-01-06T14:45:19.667202000 0.299322s info: Initializing directory /Users/pabloportabales/projects/Makers/nodeModulesTDD/rethinkdb_data
+2015-01-06T14:45:19.667416000 0.299536s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/pabloportabales/projects/Makers/nodeModulesTDD/rethinkdb_data' did not already exist or is empty.)
+2015-01-06T14:45:19.667469000 0.299589s info: Running rethinkdb 1.15.0-1 (CLANG 6.0 (clang-600.0.51))...
+2015-01-06T14:45:19.673553000 0.305673s info: Running on Darwin 13.4.0 x86_64
+2015-01-06T14:45:19.673735000 0.305855s info: Using cache size of 100 MB
+2015-01-06T14:45:19.673830000 0.305950s warn: Cache size is very low and may impact performance.
+2015-01-06T14:45:19.673858000 0.305978s info: Loading data from directory /Users/pabloportabales/projects/Makers/nodeModulesTDD/rethinkdb_data
+2015-01-06T14:45:20.483456000 1.115605s info: Listening for intracluster connections on port 29015
+2015-01-06T14:45:20.484633000 1.116782s info: Listening for client driver connections on port 28015
+2015-01-06T14:45:20.484911000 1.117060s info: Listening for administrative HTTP connections on port 8080
+2015-01-06T14:45:20.484915000 1.117063s info: Listening on addresses: 127.0.0.1, ::1
+2015-01-06T14:45:20.484931000 1.117080s info: To fully expose RethinkDB on the network, bind to all addresses
+2015-01-06T14:45:20.484947000 1.117096s info: by running rethinkdb with the `--bind all` command line option.
+2015-01-06T14:45:20.484963000 1.117112s info: Server ready

@@ -14,5 +14,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pablo Portabales",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "secondthought": "0.0.4"
+  }
 }
